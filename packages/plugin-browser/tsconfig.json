@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": [""],
+    "allowJs": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
+    "paths": {
+      "@moinitor_sdk/browser-plugin-views": ["./node_modules/moinitor_sdk/browser-plugin-views/dist/types/index.d.ts"],
+      "src/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*", "__tests__/**/*"]
+}
